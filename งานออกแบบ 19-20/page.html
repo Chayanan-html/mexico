@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>แนะนำการท่องเที่ยวที่ประเทศแม็กซฺิโก</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ===== Frame Top ===== */
+    .top {
+      height: 180px;
+      border: 2px solid #000;
+      border-bottom: none;
+      overflow: hidden;
+    }
+
+    .top img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #ffffff;
+    }
+
+    /* ===== Middle ===== */
+    .middle {
+      display: flex;
+      height: calc(100vh - 360px);
+    }
+
+    /* Frame Menu */
+    .menu {
+      width: 280px;
+      background: #67b97b;
+      border-left: 2px solid #000;
+      border-right: 2px solid #000;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .menu a {
+      display: block;
+      margin: 15px 0;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* Frame Main */
+    .main {
+      flex: 1;
+      background: #ffffff;
+      border-right: 2px solid #000;
+    }
+
+    .main iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* ===== Frame Footer ===== */
+    .footer {
+      height: 160px;
+      background: #ca6a6a;
+      border: 2px solid #000;
+      border-top: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Frame Top -->
+  <div class="top">
+    <img src="https://t4.ftcdn.net/jpg/05/04/43/85/360_F_504438595_7k1pj3c2mNyZg9BIo9CUOBaftxy3clwk.jpg" alt="Welcome to Mexico">
+  </div>
+
+  <!-- Frame Menu + Main -->
+  <div class="middle">
+
+    <!-- Menu -->
+    <div class="menu">
+      สถานที่ท่องเที่ยว
+      <a href="page1.html" target="content">1. พิพิธภัณฑ์ประวัติศาสตร์แห่งชาติเม็กซิโก (National Museum of History)</a>
+      <a href="page2.html" target="content">2.โซกาโล (Zócalo)</a>
+      <a href="page3.html" target="content">3.มหาวิหารพระแม่แห่งกัวดาลูป (Basilica De Guadalupe)</a>
+      <a href="page4.html" target="content">4.โชชิมิลโก (Xochimilco)</a>
+      <a href="page5.html" target="content">5.หลุมแกรนด์ซีโนเต (Gran Cenote)</a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <iframe name="content" src="page1.html"></iframe>
+    </div>
+
+  </div>
+
+  <!-- Frame Footer -->
+  <div class="footer">
+    เว็บไซต์แนะนำสถานที่ท่องเที่ยวประเทศเม็กซิโก
+  </div>
+
+</body>
+</html>
